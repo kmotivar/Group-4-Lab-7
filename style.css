@@ -128,3 +128,85 @@ img {
 
 
     
+/* Whole Menu Bar */
+    
+.f-rt{
+  float: right; 
+}
+    
+.f-lt{
+  float: left;
+}
+    
+.ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.menu {
+  list-style-type: none;
+  color: black;
+  margin: 1px 40;
+  text-decoration: none;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+    
+.text {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 39px;  
+}
+
+
+  /* Content Panel - Only Hover idea from W3schools.com and CSS by our Team */
+  
+  .a1 {
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    
+    }
+    
+    .content-panel {
+    flex: 0 0 250px;
+    }
+    
+    .all-a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    }
+    
+    .all-a:hover {
+    background-color: grey;
+    color:black;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: grey;
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
