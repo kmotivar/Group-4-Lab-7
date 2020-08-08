@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* 12 Column Grid Layout */
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 10px;
+  row-gap: 20px
+}
+
+/* Header */
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+/* Images */
+img {
+  grid-column: 7 / 9;
+  border: 6px blue;
+  border-style: double;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+/* Aboutus info */
+.text {
+  grid-column: 4 / 7;
+}
+
+/* For logo */
+.logo {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  position: sticky;
+  top:0;
+}
+
+/* For home navigation */
+.home {
+  grid-column: 10 / 12;
+  grid-row: 1 / 2;
+  position: sticky;
+  top:0;
+}
+
+/* Font-Style */
+h1 {
+    text-align: center;
+    color:rgb(2, 0, 128); 
+    font-family: fantasy;
+    font-style: oblique;
+}
+
+h2 {
+  color: darkred;
+  font-size: 25px;
+  font-style: bold;
+  text-decoration: underline;
+  font-family: fantasy;
+}
+ .p{
+  color: rgb(57, 31, 175);
+  font-size: 25px;
+  font-style: initial;
+  
+}
+
+/* Background Color */
+body {
+  background-image: url("images/t4.jpg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+/* Footer */
+.footer {
+  text-align: center;
+  grid-column: 1 / 13;
+  font-size: 25px;    
+}
+    
+.ftr {
+  padding: 50px 20;
+}
