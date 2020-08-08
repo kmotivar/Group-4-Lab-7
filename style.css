@@ -1,0 +1,130 @@
+/* Basic CSS*/
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Grid Layout Area */
+.container {
+  display: grid;
+  grid-template-rows: 4em 3em 45em auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header header header header header header" 
+    "nav nav nav nav nav nav"
+    "cpanel main main main main main " 
+    ". carea carea carea carea ." 
+    "footer footer footer footer footer footer";
+}
+
+.cont{
+  display: grid;
+  grid-template-rows: 200px repeat(3, 1fr) 50px; 
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 20px;
+}
+
+.conthead {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background-color: black;
+
+}
+
+/* Navigation */
+.nav {
+  grid-area: nav; 
+  background-color: black;
+  align-self: center;
+  position: sticky;
+  top:0;
+}
+
+/* For content panel */
+.content-panel {
+  grid-area: cpanel; 
+}
+
+/* for main area */
+.main-area {
+  grid-area: main; 
+  align-self: center;
+  justify-self: center;
+
+}
+
+/* Content area */
+.content-area {
+  grid-area: carea;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.ftr {
+  background-color: #eaeaf6;
+  padding: 50px 20;
+}
+
+/* For image */
+img {
+  width: 100%;
+  height: 8em;
+}
+
+/* Basic CSS */
+.content {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+}
+  
+.t1 {
+  font-size: 32px;
+}
+  
+.t2{
+  font-size: 16px;
+}
+  
+.t3 {
+  font-size: 14px;
+}
+
+/* Background image */
+.back-img {
+  background-image: url("images/b2.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+}
+
+.title {
+  font-size: 6ex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2px 1;
+  color: white;
+  text-align: center;
+}
+
+
+    
